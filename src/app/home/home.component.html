@@ -1,0 +1,19 @@
+<div class="homedr">
+    <h1>WELCOME TO HOME</h1>
+    <p>Directives: ngif | ngif_else |attributes directives| ngfor</p>
+    <hr>
+    <label for="">Database :</label>
+    <input type="text" [(ngModel)]="dbName">
+    <br>
+    <br>
+    <button (click)="showing()">ADD DATABASE</button>
+    <p *ngIf="db;else noserver">{{dbName}}</p>
+    <br>
+    <br>
+    <p><ng-template #noserver>No Server was created</ng-template></p>
+    
+
+    <hr>
+
+
+</div>

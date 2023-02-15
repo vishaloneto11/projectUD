@@ -1,0 +1,24 @@
+<h2>This is String Interpolation Demo</h2>
+<p>server works!</p>
+<p>Status of server: {{status}}</p>
+<p>Server run on : {{Sid}}</p>
+<p>Server name is : {{serverNamefun()}}</p>
+<hr>
+<h2>This is Property Binding Demo</h2>
+<input type="text" [value]="name" [disabled]="disable">
+<br>
+<hr>
+<h2>This is Event Binding</h2>
+<br>
+
+<hr>
+<p>ONE WAY BINDING</p> 
+<label for="">Name: </label>
+<input type="text"class="form-control" (input)="onupdate($event)">
+<br><hr>
+<p>TWO WAY BINDING</p> 
+<input type="text"class="form-control"[(ngModel)]="status"> 
+<br><br>
+<button (click)="oncreateserver()" >ADD SERVER</button>
+<p *ngIf="servercode">Status of server: {{status}}</p>
+<!-- <span>{{nameofuser}}</span> -->
